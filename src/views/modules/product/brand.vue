@@ -77,7 +77,7 @@ export default {
             console.log("获取到改行数据 ", row);
             let { brandId, showStatus } = row;
             this.$http({
-                url: this.$http.adornUrl("/product/brand/update"),
+                url: this.$http.adornUrl("/product/brand/update/status"),
                 method: "post",
                 data: this.$http.adornData({ brandId, showStatus }, false),
             }).then(({ data }) => {
